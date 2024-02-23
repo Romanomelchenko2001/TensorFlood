@@ -1,0 +1,13 @@
+/.idea/**
+/__pycache__/**
+/ssh/**
+/.ipynb_checkpoints/**
+/annotations/**
+/tb_logs/**
+/test_v2/**
+/train_v2/**
+/Airbus_Detection_Challenge.ipynb
+/Airbus_Detection_Challenge_.ipynb
+/airbus-ship-detection.zip
+/train_ship_segmentations_v2.csv
+/jopa.docx
