@@ -8,11 +8,16 @@ The dataset is large - approximately 250,000~ instances, 150,000 of which have n
 I decided to use the U-Net architecture, with a cross-entropy loss function, taking class weights of 0.0027 and 0.998, as this is the distribution of labeled and unlabeled pixels on the entire dataset. Another option for leveling this classification problem is to take and sample a subset of, say, 1 to 9 photos where there are no ships to photos where there are ships. But in this problem, I tried to simply weight the loss function by sampling from the general population, which can worsen the imbalance of the dataset.
 I have used three various probabilistic sampling methods:
 
-Simple choice without return:
+### Simple choice without return: 
+
 samples['simple probabilistic'] = np.random.choice(train_inds_copy, size=n_samples, replace = False)
-Bernoulli sampling:
+
+### Bernoulli sampling:
+
 samples['bernoulli'] = np.asarray(train_inds_copy)[np.random.rand(len(train_inds_copy))<=pi]
-Systematic sampling:
+
+### Systematic sampling:
+
 samples['systematic'] = np.asarray(train_inds_copy)[np.ceil(np.arange(r,  len(train_inds_copy)-1, a)).astype(int)]
 
 ![image](https://github.com/Romanomelchenko2001/TensorFlood/assets/47889749/2ea3f043-9dcf-45fd-b529-ddac8a746432)
