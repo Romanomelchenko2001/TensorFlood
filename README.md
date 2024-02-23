@@ -34,6 +34,7 @@ The results were more promising.
 ![image](https://github.com/Romanomelchenko2001/TensorFlood/assets/47889749/a75506c7-08a0-4d8d-9e52-d87c20137949)
 ![image](https://github.com/Romanomelchenko2001/TensorFlood/assets/47889749/0d0f18ef-e34e-4ad7-996e-a6c6d0c1fc5d)
 
+# train.py is script for training, inference.py is script for evaluation
 
 
   
