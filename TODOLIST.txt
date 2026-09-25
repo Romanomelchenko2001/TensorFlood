@@ -1,0 +1,8 @@
+1. Remake Airbus detector
+2. Implement something custom
+3. Implement something by detection papers
+4. Make tree tracker
+
+
+PLAN ON DETECTOR 
+1. Create and pretrain a classifier, then create and finetune a detector part.
